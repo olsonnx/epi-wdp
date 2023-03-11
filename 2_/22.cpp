@@ -7,5 +7,4 @@ int main(){
     cin>>tekst1;
     string tekst2=tekst1;
     cout<<tekst2;
-    
 }

@@ -9,16 +9,16 @@ for(int i=0; i<6; i++) {
     cin>>t[i];
 }
 
-ofstream fout;
-fout.open("dane.txt");
+ofstream file;
+file.open("dane.txt");
 
-if(fout.fail()) {
+if(file.fail()) {
     cout<<"blad w otwarciu pliku!";
 } else {
     for(int i=0; i<6; i++) {
-        fout << t[i] <<"\n";
+        file << t[i] <<"\n";
     }
     cout<<"wyeksportowano liczby";
 }
-fout.close();
+file.close();
 }
